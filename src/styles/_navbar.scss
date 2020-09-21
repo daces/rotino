@@ -1,7 +1,31 @@
-#site-navbar {
+body {
+  font-size: 16px;
+}
+.navbar {
   background-color: $color-primary;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+.navbar:after {
+  content: " ";
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  border: 1px solid #000;
+  margin-bottom: -3px;
+  z-index: -1;
+}
+.navbar__title_theme_dark {
+  background-color: $color-primary;
+  color: $color-teriary;
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  opacity: 1;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: $color-teriary;
+}
+.navbar-center {
+  justify-content: center;
 }

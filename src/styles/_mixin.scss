@@ -1,0 +1,24 @@
+@mixin header__title() {
+    content: " ";
+    position: absolute;
+    background: url("../images/pattern.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    text-align: center;
+    background-size: 25%;
+    display: block;
+    z-index: 2;
+}
+@mixin prev_next_button() {
+    position: absolute;
+    font-family: cursive;
+    top: 0;
+    bottom: 0;
+    height: 100px;
+    margin: auto;
+    opacity: .8;
+    color: #000;
+    font-size: 75px;
+    z-index: 123456789;
+}
